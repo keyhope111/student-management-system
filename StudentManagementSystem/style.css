@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('https://image2url.com/r2/default/images/1772106397937-13a555ed-24c9-4747-b77d-a2992a3f5fb1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.navbar {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+form label {
+    display: block;
+    margin: 8px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+button.primary {
+    background: #4a90e2;
+    color: #fff;
+}
+
+button.secondary {
+    background: #888;
+    color: #fff;
+}
+
+.search-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.link {
+    background: none;
+    color: #4a90e2;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.muted {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #bbb;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background: #fafafa;
+}
+
+tbody tr:hover {
+    background: #eef;
+}
+
+#logout-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+    margin-top: 4px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.2rem;
+    margin-right: 0;
+}
+
+.toggle-password:hover {
+    opacity: 0.7;
+}
+
+.card-header { overflow:auto; margin-bottom:10px; }
+.green-button {
+    background:#2ecc71; color:#fff; border:none;
+    padding:8px 12px; border-radius:3px; cursor:pointer;
+    float:right;
+}
+.green-button:hover { opacity:.85; }

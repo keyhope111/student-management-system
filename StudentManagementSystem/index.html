@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1>Student Management System</h1>
+            <div id="user-info"></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="auth-container" class="card">
+                        <div id="login-panel">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label>Username: <input type="text" id="username" required></label>
+                    <label>
+                        Password: 
+                        <div class="password-wrapper">
+                            <input type="password" id="password" required>
+                            <button type="button" class="toggle-password" data-target="password">👁️</button>
+                        </div>
+                    </label>
+                    <button type="submit" class="primary">Login</button>
+                </form>
+                <p id="login-error" class="error"></p>
+                <p class="muted">Don't have an account? <button id="show-register" class="link">Register</button></p>
+            </div>
+
+            <div id="register-panel" class="hidden">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <label>Username: <input type="text" id="reg-username" required></label>
+                    <label>
+                        Password: 
+                        <div class="password-wrapper">
+                            <input type="password" id="reg-password" required>
+                            <button type="button" class="toggle-password" data-target="reg-password">👁️</button>
+                        </div>
+                    </label>
+                    <label>
+                        Confirm Password: 
+                        <div class="password-wrapper">
+                            <input type="password" id="reg-confirm" required>
+                            <button type="button" class="toggle-password" data-target="reg-confirm">👁️</button>
+                        </div>
+                    </label>
+                    <button type="submit" class="primary">Create Account</button>
+                </form>
+                <p id="register-error" class="error"></p>
+                <p class="muted">Already have an account? <button id="show-login" class="link">Login</button></p>
+            </div>
+        </div>
+
+        <div id="app" class="hidden">
+            <button id="logout-btn" class="secondary">Logout</button>
+            <section id="add-student" class="card">
+                <h2>Add / Edit Student</h2>
+                <form id="student-form">
+                    <label>ID:<input type="text" id="student-id" placeholder="Enter student ID" required></label>
+                    <label>Full Name:<input type="text" id="student-name" placeholder="Enter student name" required></label>
+                    <label>Course:<input type="text" id="student-course" placeholder="Enter course (e.g. BSIT)" ></label>
+                    <label>Year Level:<input type="text" id="student-year" placeholder="Enter year level (e.g. 1st Year)" required></label>
+                    <label>Age:<input type="number" id="student-age" placeholder="Enter age" required></label>
+                    <button type="submit" class="primary">Save</button>
+                </form>
+            </section>
+            <section class="card">
+    <div class="card-header">
+        <button id="toggle-student-list" class="green-button">
+            Student List
+        </button>
+    </div>
+    <div id="student-table-container" class="hidden">
+        <h2>Students</h2>
+                  <table>
+                  <thead>
+                    <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="students-tbody"></tbody>
+                </table>
+            </div>
+         </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html
